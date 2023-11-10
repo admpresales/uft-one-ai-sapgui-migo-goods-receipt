@@ -7,8 +7,8 @@ SAPGuiSession("Session").SAPGuiWindow("Goods Receipt").SAPGuiEdit("Init.entry of
 SAPGuiSession("Session").SAPGuiWindow("Goods Receipt").Maximize @@ hightlight id_;_0_;_script infofile_;_ZIP::ssf1.xml_;_
 SAPGuiSession("Session").SAPGuiWindow("Goods Receipt").SAPGuiEdit("Material").Set Parameter.Item("Material") @@ hightlight id_;_1_;_script infofile_;_ZIP::ssf1.xml_;_
 SAPGuiSession("Session").SAPGuiWindow("Goods Receipt").SAPGuiTabStrip("TS_GOITEM").Select "Quantity" @@ hightlight id_;_1_;_script infofile_;_ZIP::ssf2.xml_;_
+SAPGuiSession("Session").SAPGuiWindow("Goods Receipt").SAPGuiEdit("Quantity in Unit of Entry").Set Parameter.Item("Quantity")
 SAPGuiSession("Session").SAPGuiWindow("Goods Receipt").SAPGuiTabStrip("TS_GOITEM").Select "Where" @@ hightlight id_;_1_;_script infofile_;_ZIP::ssf2.xml_;_
-SAPGuiSession("Session").SAPGuiWindow("Goods Receipt").SAPGuiEdit("Movement type").Set Parameter.Item("Quantity")
 SAPGuiSession("Session").SAPGuiWindow("Goods Receipt").SAPGuiEdit("Plant").Set Parameter.Item("Plant") @@ hightlight id_;_3_;_script infofile_;_ZIP::ssf2.xml_;_
 SAPGuiSession("Session").SAPGuiWindow("Goods Receipt").SendKey ENTER @@ hightlight id_;_0_;_script infofile_;_ZIP::ssf2.xml_;_
 If AIUtil.FindTextBlock("Change to Default Values").Exist(2) Then
