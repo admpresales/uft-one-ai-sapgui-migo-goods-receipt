@@ -27,7 +27,10 @@ If AIUtil.FindTextBlock("Display logs").Exist(5) Then
 	MessageDate = Split (LogMessageArray(5), "/")
 	DocDate = MessageDate(1) & "/01/" & MessageDate(0)
 	AIUtil("text_box", "Document Date:").SetText DocDate
-	AIUtil("text_box", "Posting Date:").SetText DocDate
+	AIUtil.FindTextBlock("Document Date:").Click
+	Set Anchor = AIUtil.FindTextBlock("Posting Date:")
+	AIUtil("text_box", micAnyText, micWithAnchorOnLeft, Anchor).SetText DocDate
+	'AIUtil("text_box", "Posting Date:").SetText DocDate
 	
 	AIUtil("button", "Post").Click
 End If
